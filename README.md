@@ -1,5 +1,5 @@
 # Gerador de Nitros da promoção do Opera GX
-Programa simples para gerar links da [promoção de 1 mês de Nitro para usuários de Opera GX]((https://support.discord.com/hc/pt-br/articles/19822382831767-1-Month-Discord-Nitro-for-Opera-GX-Users-2023-Promo-FAQ))!
+Programa simples para gerar links da [promoção de 1 mês de Nitro para usuários de Opera GX](https://support.discord.com/hc/pt-br/articles/19822382831767-1-Month-Discord-Nitro-for-Opera-GX-Users-2023-Promo-FAQ)!
 
 ## Funcionamento
 
