@@ -17,6 +17,7 @@ async function makeRequest() {
   try {
     const response = await axios.post(apiUrl, {
       partnerUserId: crypto.randomUUID(),
+      }, {
       headers: {
         "Origin": "https://www.opera.com",
       },
