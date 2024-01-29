@@ -1,6 +1,6 @@
 {
   "name": "operagx-nitro-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gerador de links para resgatar o Nitro da promoção do Discord e OperaGX",
   "main": "index.js",
   "type": "module",

@@ -1,6 +1,7 @@
 // Importação das bibliotecas
 import axios from 'axios';
-import fs from 'fs';
+import fs from 'node:fs';
+import crypto from 'node:crypto';
 
 // URL da API que gera os tokens
 const apiUrl = 'https://api.discord.gx.games/v1/direct-fulfillment';
@@ -11,24 +12,15 @@ const outputFile = 'nitros.txt';
 // Número de requisições que serão feitas
 const numRequests = 10;
 
-// Função para gerar um partnerUserId aleatório usando caracteres aleatórios
-async function generateRandomPartnerUserId(length) {
-  const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
-  let result = '';
-  for (let i = 0; i < length; i++) {
-    result += characters.charAt(Math.floor(Math.random() * characters.length));
-  }
-  return result;
-}
-
 // Função para fazer a requisição e retornar o token
 async function makeRequest() {
-  const requestData = {
-    partnerUserId: await generateRandomPartnerUserId(64),
-  };
-
   try {
-    const response = await axios.post(apiUrl, requestData);
+    const response = await axios.post(apiUrl, {
+      partnerUserId: crypto.randomUUID(),
+      headers: {
+        "Origin": "https://www.opera.com",
+      },
+    })
     return response.data.token;
   } catch (error) {
     console.error('Erro ao fazer a requisição:', error.message);

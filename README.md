@@ -3,7 +3,7 @@ Programa simples para gerar links da [promoção de 1 mês de Nitro para usuári
 
 ## Funcionamento
 
-Nessa promoção do Discord, quando o usuário resgata o Nitro na tela do OperaGX, é feito uma requisição para uma API que recebe uma string chamada de partnerUserId e retorna um token, esse token é usado na URL do Nitro, que depois pode ser resgatado em uma conta do Discord. O que o programa faz é basicamente fazer essas requisições usando um partnerUserId criado com caracteres aleatórios, o que gera um token válido e pode ser usado em uma URL para resgatar o Nitro.
+Nessa promoção do Discord, quando o usuário resgata o Nitro na tela do OperaGX, é feito uma requisição para uma API que recebe uma string com um UUID v4 chamada de partnerUserId e retorna um token, esse token é usado na URL do Nitro, que depois pode ser resgatado em uma conta do Discord. O que o programa faz é basicamente fazer essas requisições usando um partnerUserId criado com um UUID aleatório, o que gera um token válido e pode ser usado em uma URL para resgatar o Nitro.
 
 > **Aviso:** Este programa foi desenvolvido para fins educacionais. Não me responsabilizo pelo seu uso indevido.
 
